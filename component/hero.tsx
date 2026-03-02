@@ -15,7 +15,7 @@ export default function Hero() {
         </div>
 
         {/* Form Section */}
-        <div className="bg-[#cbd1d2]/95 p-6 md:p-8 rounded-[30px] shadow-2xl w-full max-w-lg mx-auto">
+        <div className="bg-[#cbd1d2]/95 p-6 md:p-8 rounded-[30px] shadow-2xl w-full max-w-lg mx-auto opacity-80">
           <form className="w-full">
             <h1 className="text-center text-xl md:text-2xl font-bold text-[#164398] border-b-2 border-white pb-3 mb-6 uppercase tracking-wide">
               Register EOI
