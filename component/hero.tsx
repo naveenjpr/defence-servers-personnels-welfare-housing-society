@@ -72,9 +72,9 @@ export default function Hero() {
                 REGISTER NOW
               </button>
             </div>
-          </form>
-        </div>
-      </div>
-    </section>
+          </form >
+        </div >
+      </div >
+    </section >
   );
 }
