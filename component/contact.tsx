@@ -4,12 +4,12 @@ export default function Contact() {
 
 
   return (
-    <section className="bg-[url(/images/imgi_16_contact-bg.jpg)] bg-cover bg-center  pb-5">
+    <section className="bg-[url(/images/imgi_16_contact-bg.jpg)] bg-cover bg-center  pb-10">
 
       <h2 className="text-center text-white text-2xl font-bold  pt-10">CONTACT INFORMATION
       </h2>
       <div className="max-w-7xl mx-auto px-6 mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">          {/* Office Address Card */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">          {/* Office Address Card */}
           <div className="bg-white p-6 rounded-xl shadow-lg flex items-center gap-6">
             <div className="">
               <Image

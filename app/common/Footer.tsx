@@ -5,10 +5,10 @@ export default function Footer() {
         <footer className='bg-[#b74638] font-font-serif
 font-normal
 '>
-            <p className='text-center text-[white] leading-[25px] pt-[25px]'>Note: Allotment of farm lot is subject to approval by the Society's Governing Body/Draw of lot.
+            <p className='text-center text-[white] leading-[25px] pt-[25px] mb-10'>Note: Allotment of farm lot is subject to approval by the Society's Governing Body/Draw of lot.
 
             </p>
-            <p className='text-center text-[white] mt-7 pb-10'>Copyright © 2026 design by PinnacleInfoEdge. All rights reserved.</p>
+            <p className='text-center text-[14px] text-[white] mt-7 pb-10'>Copyright © 2026 design by PinnacleInfoEdge. All rights reserved.</p>
         </footer>
     )
 }
