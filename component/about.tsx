@@ -1,5 +1,9 @@
 import Image from "next/image";
-
+import { Poppins } from "next/font/google"
+const poppinsBold = Poppins({
+    subsets: ["latin"],
+    weight: "700",
+})
 export default function about() {
   return (
     <>
@@ -30,7 +34,7 @@ export default function about() {
             />
           </div>
           <div className="w-full lg:w-125 text-justify flex flex-col gap-3 py-5">
-            <h1 className="pl-1 text-2xl md:text-3xl lg:text-2xl font-[font2]">
+            <h1 className={`pl-1 text-2xl md:text-3xl lg:text-2xl ${poppinsBold.className}`}>
               LIMITED FARM LOTS AVAILABLE
             </h1>
             <h3 className="pl-1 text-sm md:text-base font-extrabold">
