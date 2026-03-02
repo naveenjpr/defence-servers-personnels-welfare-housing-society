@@ -4,7 +4,7 @@ export default function Contact() {
 
 
   return (
-    <section className="bg-[url(/images/imgi_16_contact-bg.jpg)] bg-cover bg-center  pb-10">
+    <section className="bg-[url(/images/imgi_16_contact-bg.jpg)] bg-cover bg-center  pb-15">
 
       <h2 className="text-center text-white text-2xl font-bold  pt-10">CONTACT INFORMATION
       </h2>
