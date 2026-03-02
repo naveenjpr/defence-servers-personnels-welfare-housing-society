@@ -3,47 +3,47 @@ import Image from "next/image";
 export default function about() {
   return (
     <>
-      <section className={` px-25 mt-2 mx-5 py-10 leading-[1.8]`}>
+      <section className="px-6 md:px-12 lg:px-25 mt-2 mx-auto lg:mx-5 py-10 leading-[1.8]">
         {/* part 1 */}
         <div className="text-center">
-          <p>
+          <p className="text-base ">
             Exclusive farm lots available at special reserved price for defence
             personnel, paramilitary healthcare professionals & govt. sector
             officers, and their families under an approved eco-tourism farm
             project, approved under Govt. of India policy for eco-tourism.
           </p>
-          <p>
+          <p className="text-base mt-2">
             Located near PGIMER, Chandigarh, the project offers the perfect
             blend of nature, premium amenities, and high-return investment
             potential.
           </p>
         </div>
         {/* part 2 */}
-        <div className="my-10 flex flex-row justify-between gap-5">
-          <div className="rounded-[50px] overflow-hidden h-100 w-100">
+        <div className="my-10 flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8 lg:gap-5">
+          <div className="rounded-[50px] overflow-hidden w-full max-w-[500px] aspect-square lg:w-105 lg:h-105 lg:aspect-auto">
             <Image
               src="/images/imgi_3_featured.jpg"
-              alt=""
+              alt="Featured farm lot"
               width={510}
               height={510}
-              className="object h-full w-full"
+              className=" h-full w-full"
             />
           </div>
-          <div className="w-125 text-justify flex flex-col gap-3 py-5">
-            <h1 className="text-2xl font-[font2] ">
+          <div className="w-full lg:w-125 text-justify flex flex-col gap-3 py-5">
+            <h1 className="pl-1 text-2xl md:text-3xl lg:text-2xl font-[font2]">
               LIMITED FARM LOTS AVAILABLE
             </h1>
-            <h3 className="text-sm font-extrabold">
+            <h3 className="pl-1 text-sm md:text-base font-extrabold">
               Farm Lot Sizes with Basic Sale Price
             </h3>
 
             <div>
-              <ul className="text-red-400">
+              <ul className="pl-1 text-red-500 text-[15px] ">
                 <li>a) 605 Sq. Yards: INR 30000/- (Per sq. yd)</li>
                 <li>b) 1250 Sq. Yards: INR 25000/- (Per sq. yd)</li>
               </ul>
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-600 border-t border-gray-200 pt-5 text-sm md:text-base">
               Now open for applications under the approved Eco-Tourism Policy
               (Govt. of India). Enjoy special reserved pricing exclusively for
               Defence, Paramilitary Healthcare Professionals & Govt. service
@@ -51,38 +51,40 @@ export default function about() {
             </p>
           </div>
 
-          <div className="shadow-xl rounded-xl w-80 ">
-            <div className=" pt-5 ">
-              <h2 className="text-xl font-bold p-5">SPECIAL 5% OFF FOR</h2>
-              <div className="text-xl text-center font-bold ">
-                <p className="text-left border-y py-4 mx-5 border-gray-300 flex items-center gap-2 ">
+          <div className="shadow-[0px_3px_13px_rgba(0,0,0,0.25)] rounded-xl w-full max-w-sm lg:w-75 overflow-hidden">
+            <div className="pt-5">
+              <h2 className="text-[19px] font-bold px-8 pb-5 mt-5">
+                SPECIAL 5% OFF FOR
+              </h2>
+              <div className="text-lg md:text-xl lg:text-xl font-bold">
+                <p className="text-left border-y py-4 px-5 border-gray-200 flex items-center gap-2">
                   <Image
-                    src={"/images/imgi_4_war.png"}
-                    alt=""
+                    src="/images/imgi_4_war.png"
+                    alt="War Widow Icon"
                     width={50}
                     height={50}
-                    className="m-3"
-                  />{" "}
+                    className="shrink-0 m-2"
+                  />
                   War Widows
                 </p>
-                <p className="text-left py-4 mx-5 border-y border-gray-300 flex items-center gap-2">
+                <p className="text-left py-4 px-5 border-b border-gray-200 flex items-center gap-2">
                   <Image
-                    src={"/images/imgi_4_war.png"}
-                    alt=""
+                    src="/images/imgi_4_war.png"
+                    alt="War Veteran Icon"
                     width={50}
                     height={50}
-                    className="m-3"
-                  />{" "}
+                    className="shrink-0 m-2"
+                  />
                   War Veterans
                 </p>
-                <p className="text-left pt-4 mx-5 border-t border-gray-300 flex items-center gap-2  ">
+                <p className="text-left py-4 px-5 border-b border-gray-200 flex items-center gap-2">
                   <Image
-                    src={"/images/imgi_5_mad.png"}
-                    alt=""
+                    src="/images/imgi_5_mad.png"
+                    alt="Gallantry Award Icon"
                     width={50}
                     height={50}
-                    className="m-3"
-                  />{" "}
+                    className="shrink-0 m-2"
+                  />
                   Gallantry Award Winners
                 </p>
               </div>
@@ -90,8 +92,8 @@ export default function about() {
           </div>
         </div>
         {/* part3 */}
-        <div className="text-center text-xl">
-          <p>
+        <div className="text-center mt-10">
+          <p className="px-6 lg:mx-45 text-sm ">
             <strong>Disclaimer:</strong> This is not a residential colony. It is
             an ecotourism projects comprising of forms with farmstay options
           </p>
