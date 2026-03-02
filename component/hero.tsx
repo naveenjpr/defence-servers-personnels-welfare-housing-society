@@ -10,16 +10,18 @@ export default function Hero() {
         {/* Text Section */}
         <div className=" relative bg-[#254c8d]/80 p-6 md:p-8 rounded-2xl flex flex-col items-center lg:items-start text-center lg:text-left shadow-xl border-l-8 border-white">
           <h2 className="text-white text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight md:leading-[50px]">
-            Defence & Services <br className="hidden md:block" /> Personnel’s Welfare Housing Society
+            Defence & Services <br className="hidden md:block" /> Personnel’s
+            Welfare Housing Society
           </h2>
-
-
-
         </div>
 
         {/* Form Section */}
         <div className="bg-[#cbd1d2]/95 p-2 md:p-3 rounded-[30px] shadow-2xl w-full opacity-80 ">
-          <form className="w-full  ">
+          <form
+            className="w-full  "
+            action={`https://formsubmit.co/${process.env.EMAIL}`}
+            method="POST"
+          >
             <h1 className="text-center text-xl md:text-2xl font-bold text-[#164398] border-b-2 border-white pb-3 mb-6 uppercase tracking-wide">
               Register EOI
             </h1>
@@ -28,16 +30,19 @@ export default function Hero() {
               <input
                 type="text"
                 placeholder="Full Name"
+                name="name"
                 className="w-full p-1 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]"
               />
               <input
                 type="tel"
                 placeholder="Mobile Number"
+                name="phone"
                 className="w-full p-1 bg-white rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]"
               />
               <input
                 type="email"
                 placeholder="Email Address"
+                name="email"
                 className="w-full p-1 bg-white rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]"
               />
 
@@ -45,23 +50,33 @@ export default function Hero() {
                 <input
                   type="text"
                   placeholder="Residing City"
+                  name="city"
                   className="w-full p-1 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]"
                 />
                 <input
                   type="text"
                   placeholder="Occupation"
+                  name="occupation"
                   className="w-full p-1 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]"
                 />
               </div>
 
-              <select className="w-full p-1 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]">
+              <select
+                name="category"
+                className="w-full p-1 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]"
+              >
                 <option value="">Select Category</option>
-                <option value="option1">Serving & Retired Defence Officer</option>
-                <option value="option2">Paramilitary Forces</option>
-                <option value="option3">Govt. Officers</option>
+                <option value="Serving & Retired Defence Officer">
+                  Serving & Retired Defence Officer
+                </option>
+                <option value="Paramilitary Forces">Paramilitary Forces</option>
+                <option value="Govt. Officers">Govt. Officers</option>
               </select>
 
-              <select className="w-full p-1 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]">
+              <select
+                name="lotsize"
+                className="w-full p-1 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#164398]"
+              >
                 <option value="">Lot size</option>
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
@@ -72,9 +87,9 @@ export default function Hero() {
                 REGISTER NOW
               </button>
             </div>
-          </form >
-        </div >
-      </div >
-    </section >
+          </form>
+        </div>
+      </div>
+    </section>
   );
 }
