@@ -8,10 +8,13 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
         {/* Text Section */}
-        <div className="bg-[#254c8d]/80 p-6 md:p-8 rounded-2xl flex flex-col items-center lg:items-start text-center lg:text-left shadow-xl">
+        <div className=" relative bg-[#254c8d]/80 p-6 md:p-8 rounded-2xl flex flex-col items-center lg:items-start text-center lg:text-left shadow-xl border-l-8 border-white">
           <h2 className="text-white text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight md:leading-[50px]">
             Defence & Services <br className="hidden md:block" /> Personnel’s Welfare Housing Society
           </h2>
+
+
+
         </div>
 
         {/* Form Section */}
