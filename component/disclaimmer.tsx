@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import { Poppins } from "next/font/google"
 
 export default function Disclaimmer() {
   return (
@@ -8,13 +9,13 @@ export default function Disclaimmer() {
       <div className='bg-[url(/images/imgi_15_video-bg.jpg)] py-15 '>
         <h2 className='text-center text-white text-2xl font-bold pt-3 pb-5'>FLEXIBLE FINANCING OPTIONS AVAILABLE
         </h2>
-        <p className="text-white text-center">Loan facility is available to make it easier, smoother, and more accessible.
+        <p className="text-white text-center leading-7.5">Loan facility is available to make it easier, smoother, and more accessible.
           Get assistance for loan support, and documentation.
         </p>
-        <p className='text-white text-center'>Pay 50% now and Pay the remaining amount in easy installment over 2 years or 5 years options</p>
-        <p className='text-white text-center'>Transfer benefits available | Loan transfer benefits available</p>
-        <p className='text-white text-center'>OPTION 1: Pay remaining 50% in 2 years @10% interest </p>
-        <p className='text-white text-center'>OPTION 2: Pay remaining 50% in 5 years @12% interest</p>
+        <p className='text-white text-center leading-7.5'>Pay 50% now and Pay the remaining amount in easy installment over 2 years or 5 years options</p>
+        <p className='text-white text-center leading-7.5'>Transfer benefits available | Loan transfer benefits available</p>
+        <p className='text-white text-center leading-7.5'>OPTION 1: Pay remaining 50% in 2 years @10% interest </p>
+        <p className='text-white text-center leading-7.5'>OPTION 2: Pay remaining 50% in 5 years @12% interest</p>
       </div>
       <ProjectHighlights />
       <Location />
@@ -70,13 +71,17 @@ function ProjectHighlights() {
   )
 }
 
+const poppinsBold = Poppins({
+    subsets: ["latin"],
+    weight: "700",
+})
 
 function Location() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <header className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 tracking-tight uppercase">
+          <h2 className={`text-3xl md:text-2xl font-bold text-center ${poppinsBold.className} text-gray-900 tracking-tight uppercase`}>
             WHO CAN APPLY?
           </h2>
         </header>
